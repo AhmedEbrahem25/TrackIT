@@ -1,0 +1,80 @@
+/* ===== Social Button Styles ===== */
+.social-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4); /* Adjust spacing between buttons */
+    margin-top: var(--space-8); /* Add spacing above the buttons */
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    gap: var(--space-2); /* Add spacing between the icon and text */
+    width: 100%;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    border: var(--border);
+    background-color: var(--white);
+    cursor: pointer;
+    font-size: var(--text-base);
+    font-weight: 500;
+    transition: var(--transition);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-button img {
+    width: 1.5rem; /* Adjust icon size */
+    height: 1.5rem;
+  }
+  
+  .google-button {
+    border-color: var(--gray-300);
+    color: var(--gray-700);
+  }
+  
+  .google-button:hover {
+    background-color: var(--gray-100);
+  }
+  
+  .facebook-button {
+    border-color: #1877f2;
+    color: #1877f2;
+  }
+  
+  .facebook-button:hover {
+    background-color: #f0f5ff;
+  }
+  
+  .apple-button {
+    border-color: var(--gray-900);
+    color: var(--gray-900);
+  }
+  
+  .apple-button:hover {
+    background-color: var(--gray-100);
+  }
+  /* ===== Divider ===== */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: var(--space-8) 0;
+    color: var(--gray-500);
+    font-size: var(--text-base);
+  }
+  
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--gray-300);
+  }
+  
+  .divider-text {
+    padding: 0 var(--space-4);
+  }
+  

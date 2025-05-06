@@ -1,0 +1,227 @@
+/* ===== Shared Auth Styles ===== */
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-default);
+  font-family: var(--font-sans);
+}
+
+.auth-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* ===== Input Styles ===== */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-label {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-bottom: var(--space-1);
+}
+
+.input-field {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-base);
+  border-radius: var(--radius-md);
+  border: var(--border);
+  transition: var(--transition);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field-error {
+  border-color: var(--error-500);
+}
+
+.error-text {
+  color: var(--error-500);
+  font-size: 0.75rem;
+  margin-top: var(--space-1);
+}
+
+/* ===== Password Styles ===== */
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-600);
+  font-size: var(--text-base);
+}
+
+/* ===== Buttons ===== */
+.primary-button {
+  background-color: var(--primary-500);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: var(--space-2);
+}
+
+.primary-button:hover {
+  background-color: var(--primary-600);
+}
+
+.button-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button-loading {
+  position: relative;
+  color: transparent;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--white);
+  animation: spin 1s linear infinite;
+}
+
+
+/* ===== Footer ===== */
+.auth-footer {
+  margin-top: var(--space-8);
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--gray-600);
+}
+
+.auth-link {
+  color: var(--primary-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  color: var(--primary-600);
+}
+
+/* ===== Password Strength Meter ===== */
+.strength-meter {
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray-200);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-2);
+  position: relative;
+}
+
+.strength-indicator {
+  height: 100%;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.strength-text {
+  font-size: 0.75rem;
+  text-align: right;
+  margin-top: var(--space-1);
+}
+
+/* ===== Success Message ===== */
+.auth-success-message {
+  text-align: center;
+  padding: var(--space-4);
+  background-color: #e8f5e9;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+}
+
+.auth-success-message p {
+  margin-bottom: var(--space-4);
+  color: #2e7d32;
+}
+
+/* ===== Instructions ===== */
+.auth-instructions {
+  color: var(--gray-600);
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+/* ===== Secondary Button ===== */
+.auth-secondary-button {
+  width: 100%;
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-base);
+  font-weight: 500;
+  transition: var(--transition);
+  margin-top: var(--space-4);
+}
+
+.auth-secondary-button:hover {
+  background-color: var(--gray-200);
+}
+
+/* ===== Text Button ===== */
+.auth-text-button {
+  background: none;
+  border: none;
+  color: var(--primary-500);
+  cursor: pointer;
+  font-size: var(--text-base);
+  padding: 0;
+  text-decoration: underline;
+}
+
+.auth-text-button:hover {
+  color: var(--primary-600);
+}
+
+/* ===== Footer Links ===== */
+.auth-footer-links {
+  margin-top: var(--space-4);
+  text-align: center;
+}
+
+/* ===== Animations ===== */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

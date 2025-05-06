@@ -1,0 +1,437 @@
+/* ===== Button Styles ===== */
+.filter-button,
+.reset-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #2C3E50, #34495E);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Course Button Specific Styles */
+.course-button {
+  background: #3498DB !important; /* Bright blue for call to action */
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px !important;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-button:hover,
+.reset-button:hover {
+  background: linear-gradient(to bottom, #1A2530, #2C3E50);
+  transform: translateY(-2px);
+}
+
+.course-button:hover {
+  background: #2980B9 !important; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.filter-button:active,
+.course-button:active,
+.reset-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Course Card Styles ===== */
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.courses-main {
+  margin-top: 30px;
+}
+
+.roadmap-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-header h1,h3 {
+  font-size: 24px;
+  color: #2D3748; /* Updated text color */
+}
+
+.courses-count {
+  font-size: 16px;
+  color: #3498DB; /* Updated count text color */
+  font-weight: 600;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.detailed-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 12px;
+}
+
+.course-image-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.course-image {
+  height: 120px;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.course-image span {
+  color: rgba(255, 255, 255, 0.95); /* Bright white for better contrast */
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Stronger text shadow */
+  background-color: rgba(0, 0, 0, 0.35); /* Darker background for better contrast */
+  backdrop-filter: blur(6px);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.course-level {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-level.beginner {
+  background-color: #27AE60; /* Updated green color */
+  color: white;
+}
+
+.course-level.intermediate {
+  background-color: #F39C12; /* Updated orange color */
+  color: white;
+}
+
+.course-level.advanced {
+  background-color: #E74C3C; /* Updated red color */
+  color: white;
+}
+
+.course-title {
+  font-size: 18px;
+  color: #2D3748; /* Updated text color */
+  margin: 0;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #4A5568; /* Updated text color */
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.course-meta {
+  display: flex;
+  gap: 15px;
+  margin: 12px 0;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4A5568; /* Updated text color */
+}
+
+.meta-item svg {
+  width: 16px;
+  height: 16px;
+  color: #4A5568; /* Updated icon color */
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.course-rating,
+.course-students {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #4A5568; /* Updated text color */
+}
+
+.course-rating{
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+  color: #F39C12; /* Updated star color */
+  gap: 3rem;
+}
+
+/* ===== No Courses Found ===== */
+.no-courses {
+  text-align: center;
+  padding: 40px 20px;
+  background: #F7FAFC; /* Updated background color */
+  border-radius: 12px;
+}
+
+.no-courses svg {
+  width: 15px;
+  height: 15px;
+  color: #4A5568; /* Updated icon color */
+  margin-bottom: 15px;
+}
+
+.no-courses p {
+  color: #2D3748; /* Updated text color */
+  margin-bottom: 20px;
+}
+
+.reset-button {
+  background-color: #3498DB; /* Updated button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #2980B9; /* Updated hover color */
+}
+
+/* ===== Learning Paths Styles ===== */
+.learning-paths {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.learning-path-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.learning-path-card:hover {
+  transform: translateY(-5px);
+}
+
+.path-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.path-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.web-icon {
+  background-color: #E1F0FA; /* Light blue background */
+  color: #3498DB; /* Updated icon color */
+}
+
+.data-icon {
+  background-color: #EDE7F6; /* Light purple background */
+  color: #9B59B6; /* Updated icon color */
+}
+
+.mobile-icon {
+  background-color: #E8F5E9; /* Light green background */
+  color: #27AE60; /* Updated icon color */
+}
+
+.learning-path-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #2D3748; /* Updated text color */
+}
+
+.learning-path-card p {
+  font-size: 14px;
+  color: #4A5568; /* Updated text color */
+  margin-bottom: 15px;
+}
+
+.path-courses-count {
+  font-size: 13px;
+  color: #4A5568; /* Updated text color */
+  margin-bottom: 15px;
+}
+
+.path-link {
+  display: inline-block;
+  color: #3498DB; /* Updated link color */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.path-link:hover {
+  color: #2980B9; /* Updated hover color */
+}
+
+/* ===== Footer Styles ===== */
+.roadmap-footer {
+  margin-top: 60px;
+  padding: 20px 0;
+  border-top: 1px solid #E2E8F0; /* Updated border color */
+  color: #4A5568; /* Updated text color */
+  font-size: 14px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 960px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .search-container {
+    order: 3;
+    margin: var(--space-2) 0 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-options {
+    width: 100%;
+  }
+
+  .learning-paths {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .filter-buttons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-paths {
+    grid-template-columns: 1fr;
+  }
+
+  .course-image {
+    width: 100%;
+  }
+}
+
+/* Filter button styles */
+.category-header .header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  font-size: 12px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.active-filter {
+  background: #3498DB !important; /* Updated active filter color */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+  transform: none !important;
+}
