@@ -1,0 +1,481 @@
+/* RecommendationsPage.css */
+
+/* Base Styles */
+.recommendations-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  background-color: #f9fafb;
+}
+
+.recommendations-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recommendations-header h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.recommendations-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Stats Overview */
+.stats-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  flex: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+/* Section Headers */
+.recommendation-section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0 15px 0 10px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #3498db;
+}
+
+.see-all {
+  margin-left: auto;
+  color: #3498db;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+/* Recommendation Cards Grid */
+.recommendation-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+/* Base Card Styles */
+.recommendation-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-card h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.recommendation-card p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Card Headers */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.provider-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.match-badge {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Skill Match Meter */
+.skill-match-meter {
+  margin: 20px 0;
+}
+
+.skill-match-meter h4 {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 5px;
+}
+
+.meter-container {
+  height: 8px;
+  background: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2ecc71);
+  border-radius: 4px;
+}
+
+.match-percentage {
+  font-size: 0.9rem;
+  color: #3498db;
+  font-weight: 600;
+}
+
+/* Recommendation Meta */
+.recommendation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.recommendation-meta span {
+  display: flex;
+  align-items: center;
+}
+
+.recommendation-meta .icon-sm {
+  margin-right: 5px;
+  font-size: 0.9rem;
+}
+
+.level-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.level-badge.beginner {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.level-badge.intermediate {
+  background: #fff8e1;
+  color: #ff8f00;
+}
+
+.level-badge.advanced {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+/* Action Buttons */
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.action-button.primary {
+  background: #3498db;
+  color: white;
+}
+
+.action-button.primary:hover {
+  background: #2980b9;
+}
+
+.action-button.secondary {
+  background: white;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.action-button.secondary:hover {
+  background: #f8f9fa;
+}
+
+.action-button .icon-sm {
+  margin-right: 8px;
+}
+
+/* Internship Card Specific Styles */
+.internship-card .company-info,
+.internship-card .location-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+.internship-card .icon-sm {
+  margin-right: 8px;
+  color: #95a5a6;
+  font-size: 0.9rem;
+}
+
+.internship-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.detail-item {
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #7f8c8d;
+  margin-right: 5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.skill-tag {
+  background: #e0f7fa;
+  color: #00838f;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.card-actions .action-button {
+  margin-top: 0;
+  flex: 1;
+}
+
+/* Job Card Specific Styles */
+.job-card .job-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.job-card .detail-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Skill Card Specific Styles */
+.skill-card .skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.priority-badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.priority-badge.high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.priority-badge.medium {
+  background: #fff8e1;
+  color: #ff8f00;
+}
+
+.skill-details {
+  margin: 15px 0;
+}
+
+/* Analysis Card Styles */
+.analysis-container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.analysis-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.analysis-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.strengths-section,
+.improvement-section {
+  margin: 25px 0;
+}
+
+.strengths-section h4,
+.improvement-section h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.strength-tag {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.improvement-tag {
+  background: #ffebee;
+  color: #c62828;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.market-trends h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.trend-item {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.trend-item h5 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.trend-item p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stats-overview {
+    flex-direction: column;
+  }
+  
+  .recommendation-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .internship-details,
+  .job-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+  }
+}

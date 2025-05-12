@@ -1,0 +1,16 @@
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Content area styling */
+.app-content {
+  flex: 1;
+  padding: 2rem;
+}
